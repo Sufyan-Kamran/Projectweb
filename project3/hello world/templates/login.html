@@ -1,20 +1,21 @@
 {% extends 'layout.html' %} {% block title %} Login {% endblock %} {% block content %}
 <div class="container">
-    <div class="row">
-        <div style="background: linear-gradient(-33deg,#f60000ca, rgb(246, 0, 168)); margin-top: 10px; border-radius:30px; height: 600px;" class="col-md-6 col-md-offset-3">
+    <img style="position:absolute; object-fit: cover; margin-left: -18%;margin-top: -20px; object-fit: cover;  width: 100%;height: 95%;" src="{{url_for('static', filename='backgroun.jpg')}}" align="middle" />
+    <div class="row" style="position:relative; margin-left:0; object-fit: cover; width:fit-content">
+        <div style="background: linear-gradient(-33deg,#111111ca, rgb(221, 38, 38));  align-items: center; margin-left:300px; margin-top: 70px; border-radius:7px; height: 600px; width: 100%;" class="col-md-6 col-md-offset-3">
             <form action="/login" method="POST">
                 <div class="form-group">
                     <img style="background: transparent;margin-left: 35%; width: 150px;height: 150px;" src="{{url_for('static', filename='logo2.png')}}" align="middle" />
 
-                    <label style="width: 1000px;text-align: center; color: aliceblue; margin-top: 50px; font-size: 18px;">Email:</label>
+                    <label style="width: 100%;text-align: center; color: orange; margin-top: 50px; font-size: 22px;">Email:</label>
                     <input type="email" class="form-control" style="width: 100%;text-align: center;font-size: 18px;" name="email">
                 </div>
                 <div class="form-group">
-                    <label style="width: 1000px;text-align: center;font-size: 18px; color: aliceblue; margin-top: 25px;">Password:</label>
-                    <input type="password" class="form-control" style="width: 100%;text-align: center;font-size: 18px; " name="password">
+                    <label style="width: 100%;text-align: center;font-size: 22px; color: orange; margin-top: 25px;">Password:</label>
+                    <input type="password" class="form-control" style="width: 100%;text-align: center;font-size: 22px; " name="password">
                 </div>
                 <div style="width: 100%; align-items: center; text-align: center;" class="form-group">
-                    <button style="margin-top: 50px;border-radius: 10px; width: 100px;background: whitesmoke; color: black;" class="btn btn-primary">Login</button>
+                    <button style="margin-top: 50px;border-radius: 10px; width: 100px; background: transparent; border: 3px SOLID orange; color: orange;" class="btn btn-primary">Login</button>
                 </div>
             </form>
         </div>
